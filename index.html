@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+  <!-- normaliz -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="get">
+  <h1>Login</h1>
+  <div class="user">
+    <input type="text" name="user" id="user">
+    <label for="user">username</label>
+  </div>
+  <div class="pas">
+    <input type="password" name="pas" id="pas">
+    <label for="pas">pasword</label>
+  </div>
+  <div class="sub">
+    <button class="subm">
+      <span></span><span></span><span></span><span></span>
+      Log In
+    </button>
+  <hr>
+  <span class="or">or</span>
+  <button class="sign">
+    <span></span><span></span><span></span><span></span>
+    Sign Up
+  </button>
+  </div>
+</form>
+<script>
+  document.querySelector(".subm").onclick = () => {
+    return false;
+  }
+  document.querySelector(".sign").onclick = () => {
+    window.location.href = "/html/sign-up.html"
+    return false;
+  }
+</script>
+</body>
+</html>

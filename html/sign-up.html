@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign UP</title>
+    <!-- normaliz -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <form action="get">
+    <h1>Sign Up</h1>
+    <div class="user">
+      <input type="text" name="user" id="user" required>
+      <label for="user">User Name</label>
+    </div>
+    <div class="user">
+      <input type="email" name="email" id="email" required>
+      <label for="email">Email</label>
+    </div>
+    <div class="pas">
+      <input type="password" name="pas" id="pas" required>
+      <label for="pas">Password</label>
+    </div>
+    <div class="pas">
+      <input type="password" name="pas" id="pas" required>
+      <label for="pas">Password Agin</label>
+    </div>
+    <div class="sub">
+      <button>
+        <span></span><span></span><span></span><span></span>
+        Submit
+      </button>
+    </div>
+  </form>
+  <script>
+    document.querySelector("button").onclick = () => {
+      return false;
+    }
+  </script>
+</body>
+</html>
